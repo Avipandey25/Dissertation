@@ -1,0 +1,15 @@
+Column,Type,Description
+student_name,object,Unique identifier for the credential
+course,object,Name of the student
+institution,object,Issuing institution
+Credential ID,object,Course name
+fraud,int64,"Fraud flag (0=legitimate, 1=fraudulent)"
+institution_encoded,int64,Encoded institution for ML
+course_encoded,int64,Encoded course for ML
+institution_frequency,int64,Frequency of institution in dataset
+course_frequency,int64,Frequency of course in dataset
+credential_id_numeric,float64,Velocity metric (difference in credential IDs)
+velocity,float64,Batch size proxy
+batch_size,int64,Issuer activity metric
+issuer_activity,int64,SHA-256 hash of credential data
+credential_hash,object,Fraud prediction from model
